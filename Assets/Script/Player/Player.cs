@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,6 +10,8 @@ public class Player : MonoBehaviour
 
     public ItemData itemData;
     public Action addItem;
+
+    public Transform dropPosition;
 
     private void Awake()
     {

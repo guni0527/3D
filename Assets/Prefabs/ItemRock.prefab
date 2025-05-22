@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 3486235637843917877}
   - component: {fileID: 1753163806597785890}
   - component: {fileID: 4165476158946566823}
-  - component: {fileID: 997596418097547272}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rock1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,27 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &997596418097547272
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2344291673204738882}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.6, z: 0.7}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5197720440930747919
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,8 +94,8 @@ GameObject:
   - component: {fileID: 4605349586216303799}
   - component: {fileID: 3497486024709402530}
   - component: {fileID: 4163430542436595214}
-  - component: {fileID: 8974678533903075807}
-  m_Layer: 0
+  - component: {fileID: 355446507456653252}
+  m_Layer: 7
   m_Name: ItemRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +166,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8974678533903075807
+--- !u!114 &355446507456653252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,3 +178,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e5e79b394f8b742b5e00076b60da2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 420ddcc685b5b7b4d8952bc84ad34fa2, type: 2}

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3414497371893364361}
   - component: {fileID: 6334195393880170842}
   - component: {fileID: 3217417596363487842}
-  - component: {fileID: 3959730923098772414}
-  m_Layer: 0
+  - component: {fileID: 1425454734008178861}
+  m_Layer: 7
   m_Name: ItemWood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3959730923098772414
+--- !u!114 &1425454734008178861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e5e79b394f8b742b5e00076b60da2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 64657c879991df247b9574a260759953, type: 2}
 --- !u!1 &2148850110924821304
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,12 +107,12 @@ GameObject:
   - component: {fileID: 6427391784312120637}
   - component: {fileID: 2634715312429172327}
   - component: {fileID: 5014579020183339342}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6427391784312120637
 Transform:

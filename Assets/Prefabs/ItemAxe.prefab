@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2536095046657558902}
   - component: {fileID: 4960073585326950598}
   - component: {fileID: 4800566688025183659}
-  - component: {fileID: 696115744208343135}
-  m_Layer: 0
+  - component: {fileID: 4485668413519355009}
+  m_Layer: 7
   m_Name: ItemAxe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &696115744208343135
+--- !u!114 &4485668413519355009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e5e79b394f8b742b5e00076b60da2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 4a80de3f8aefd3f41a6c48332ac46abb, type: 2}
 --- !u!1 &8282726759354046002
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +107,7 @@ GameObject:
   - component: {fileID: 6327373595439755468}
   - component: {fileID: 4507577134106962528}
   - component: {fileID: 6465521352228337538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ax_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
