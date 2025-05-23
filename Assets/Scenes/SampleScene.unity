@@ -1996,6 +1996,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cbc4c13b07c91e438dbb9d2220f65a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slots: []
+  inventoryWindow: {fileID: 788070354}
+  slotPanel: {fileID: 1682281876}
+  dropPosition: {fileID: 0}
+  selectedItemName: {fileID: 782146870}
+  selectedItemDescription: {fileID: 194212458}
+  selectedItemStatName: {fileID: 1839565605}
+  selectedItemStatValue: {fileID: 1060539250}
+  useButton: {fileID: 2107311720}
+  equipButton: {fileID: 1614171875}
+  unEquipButton: {fileID: 1452000576}
+  dropButton: {fileID: 280203652}
 --- !u!114 &788070357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2571,6 +2583,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5854460577280488733, guid: 6ea4d91e7d006864b9a325b3f0e78b17, type: 3}
   m_PrefabInstance: {fileID: 978053360}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1034752335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034752336}
+  m_Layer: 6
+  m_Name: dropPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1034752336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034752335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1794424781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1060539248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,6 +4588,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1392164540}
+  - {fileID: 1034752336}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1794424784
@@ -4621,7 +4665,19 @@ MonoBehaviour:
     m_ActionId: 017638a5-0668-4039-b8b0-06ebb5e1bab8
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1794424785}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnInventory
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 56d85d5e-0b76-47cc-b0d1-0a5dd126ab03
     m_ActionName: Player/Inventory[/Keyboard/tab]
   - m_PersistentCalls:
@@ -4686,6 +4742,7 @@ MonoBehaviour:
   controller: {fileID: 0}
   condition: {fileID: 0}
   itemData: {fileID: 0}
+  dropPosition: {fileID: 0}
 --- !u!114 &1794424787
 MonoBehaviour:
   m_ObjectHideFlags: 0
